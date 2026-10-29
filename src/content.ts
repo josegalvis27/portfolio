@@ -171,7 +171,7 @@ export const experience: { role: T; company: string; period: T; points: T[] }[] 
   },
   {
     role: { es: "Co-founder", en: "Co-founder" },
-    company: "Staff On",
+    company: "Staff On · staffon.app",
     period: { es: "2026 – hoy", en: "2026 – now" },
     points: [
       {
@@ -255,6 +255,8 @@ export const featured: Project[] = [
       en: "Temporary staffing: profiles, shifts, automatic contracts, two-part verified payments, ratings and BCV exchange rate. App, API and dashboard.",
     },
     stack: ["Flutter", "Express", "MongoDB", "JWT", "Maestro"],
+    image: "/shots/staff-on.jpg",
+    live: "https://staffon.app",
   },
 ];
 

@@ -116,7 +116,7 @@ export const resume: Record<Lang, Resume> = {
       },
       {
         role: "Co-founder",
-        company: "Staff On",
+        company: "Staff On — staffon.app",
         period: "2026 – present",
         place: "Caracas, Venezuela",
         groups: [
@@ -289,7 +289,7 @@ export const resume: Record<Lang, Resume> = {
       },
       {
         role: "Co-founder",
-        company: "Staff On",
+        company: "Staff On — staffon.app",
         period: "2026 – presente",
         place: "Caracas, Venezuela",
         groups: [
