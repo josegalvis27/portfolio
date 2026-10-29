@@ -7,21 +7,22 @@ export function Reveal({ children, delay = 0, className }: { children: ReactNode
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, y: 24 }}
+      initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
+      // Start before the element reaches the viewport so fast scrolling never shows empty space
+      viewport={{ once: true, margin: "0px 0px 240px 0px" }}
+      transition={{ duration: 0.4, delay, ease: "easeOut" }}
     >
       {children}
     </motion.div>
   );
 }
 
-export function CountUp({ to, prefix = "", suffix = "" }: { to: number; prefix?: string; suffix?: string }) {
+export function CountUp({ to, prefix = "", suffix = "", locale = "es" }: { to: number; prefix?: string; suffix?: string; locale?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true });
   const value = useMotionValue(0);
-  const text = useTransform(value, (v) => `${prefix}${Math.round(v)}${suffix}`);
+  const text = useTransform(value, (v) => `${prefix}${Math.round(v).toLocaleString(locale === "es" ? "es-ES" : "en-US", { useGrouping: "always" })}${suffix}`);
 
   useEffect(() => {
     if (inView) animate(value, to, { duration: 1.8, ease: "easeOut" });

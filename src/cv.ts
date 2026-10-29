@@ -41,7 +41,7 @@ export const resume: Record<Lang, Resume> = {
       back: "Portfolio",
     },
     summary:
-      "Computer Engineer and CTO of Coco Wallet and Coco Mercado, a self-custodial wallet with 190,000+ registered users and US$75M+ moved through fiat on/off-ramps across 9 markets in the Americas and Europe. I own architecture, mobile, payments, security and releases, leading a team of 3 engineers and 3 QA. As part of the team, I helped scale monthly operations 4× in two years while cutting RPC infrastructure cost by 75%. I moved the wallet from seed phrases to MPC/TSS and to gasless account abstraction (ERC-4337), integrated 10+ payment and KYC providers, and built an AI-agent engineering process from spec to E2E. Co-founder of Staff On.",
+      "Computer Engineer and CTO of Coco Wallet and Coco Mercado, a self-custodial wallet with 190,000+ registered users, US$75M+ in cumulative processed volume and fiat on/off-ramps across 9 markets in the Americas and Europe. I own architecture, mobile, payments, security and releases, leading a team of 3 engineers and 3 QA. As part of the team, I helped scale monthly operations 4× in two years while cutting RPC infrastructure cost by 75%. I moved the wallet from seed phrases to MPC/TSS and to gasless account abstraction (ERC-4337), integrated 10+ payment and KYC providers, and built an AI-agent engineering process from spec to E2E. Co-founder of Staff On.",
     jobs: [
       {
         role: "Chief Technology Officer — Tech Lead and Mobile Engineer",
@@ -55,7 +55,7 @@ export const resume: Record<Lang, Resume> = {
             title: "Growth and scale",
             bullets: [
               "As part of the team, scaled the platform through 4× growth in two years: from ~10,000 to ~40,000 monthly operations and from 1,650 to 4,700 monthly transacting users.",
-              "190,000+ registered users, ~1,800 daily operations and US$75M+ moved across ~800,000 completed operations.",
+              "190,000+ registered users, ~1,800 daily operations and US$75M+ in processed volume across ~800,000 completed operations (cumulative).",
             ],
           },
           {
@@ -64,7 +64,7 @@ export const resume: Record<Lang, Resume> = {
               "Led the migration of 3,500+ funded users from seed-phrase wallets to MPC/TSS with zero loss of funds.",
               "Shipped account abstraction (ERC-4337) with a paymaster and gasless transactions on Polygon, Optimism, Base, BNB Chain and Celo.",
               "Cut gas per sponsored transaction by 64% through dynamic bundler estimation, validated on-chain.",
-              "Removed ~83% of send failures by tracing them to one root cause (UserOp nonce) and moving nonce handling client-side.",
+              "Found that ~83% of observed send failures (25 of 30 in a production sample) shared one root cause, the UserOp nonce, and removed it by moving nonce handling client-side.",
               "Cut RPC spend by 75% (US$80 to US$20 per day, ~US$22K per year) after diagnosing a miscalibrated deposit monitor.",
             ],
           },
@@ -214,7 +214,7 @@ export const resume: Record<Lang, Resume> = {
       back: "Portafolio",
     },
     summary:
-      "Ingeniero en Informática y CTO de Coco Wallet y Coco Mercado, billetera self-custodial con más de 190.000 usuarios registrados y más de US$ 75 M movidos en rampas fiat de 9 mercados de América y Europa. Lidero arquitectura, mobile, pagos, seguridad y releases con un equipo de 3 desarrolladores y 3 QA. Como parte del equipo, acompañé un crecimiento ×4 en operaciones mensuales en dos años mientras el costo de infraestructura RPC bajaba 75 %. Llevé la wallet de frase semilla a MPC/TSS y a account abstraction (ERC-4337) sin gas, integré más de 10 proveedores de pagos y KYC, y construí un proceso de ingeniería con agentes de IA, de la spec al E2E. Co-founder de Staff On.",
+      "Ingeniero en Informática y CTO de Coco Wallet y Coco Mercado, billetera self-custodial con más de 190.000 usuarios registrados, más de US$ 75 M en volumen procesado acumulado y rampas fiat en 9 mercados de América y Europa. Lidero arquitectura, mobile, pagos, seguridad y releases con un equipo de 3 desarrolladores y 3 QA. Como parte del equipo, acompañé un crecimiento ×4 en operaciones mensuales en dos años mientras el costo de infraestructura RPC bajaba 75 %. Llevé la wallet de frase semilla a MPC/TSS y a account abstraction (ERC-4337) sin gas, integré más de 10 proveedores de pagos y KYC, y construí un proceso de ingeniería con agentes de IA, de la spec al E2E. Co-founder de Staff On.",
     jobs: [
       {
         role: "Chief Technology Officer — Líder Técnico y Desarrollador Móvil",
@@ -228,7 +228,7 @@ export const resume: Record<Lang, Resume> = {
             title: "Crecimiento y escala",
             bullets: [
               "Como parte del equipo, llevé la plataforma por un crecimiento ×4 en dos años: de ~10.000 a ~40.000 operaciones al mes y de 1.650 a 4.700 usuarios que operan cada mes.",
-              "Más de 190.000 usuarios registrados, ~1.800 operaciones diarias y más de US$ 75 M movidos en casi 800.000 operaciones completadas.",
+              "Más de 190.000 usuarios registrados, ~1.800 operaciones diarias y más de US$ 75 M en volumen procesado en casi 800.000 operaciones completadas (acumulado).",
             ],
           },
           {
@@ -237,7 +237,7 @@ export const resume: Record<Lang, Resume> = {
               "Lideré la migración de frase semilla a MPC/TSS de más de 3.500 usuarios con saldo, sin pérdida de fondos.",
               "Implementé account abstraction (ERC-4337) con paymaster y transacciones sin gas en Polygon, Optimism, Base, BNB Chain y Celo.",
               "Bajé 64 % el gas por transacción patrocinada con estimación dinámica del bundler, validado on-chain.",
-              "Eliminé ~83 % de los errores de envío al encontrar su causa raíz común (nonce de UserOps) y llevar su manejo al cliente.",
+              "Encontré que ~83 % de los fallos de envío observados (25 de 30 en una muestra de producción) tenían una misma causa raíz, el nonce de las UserOps, y la eliminé llevando su manejo al cliente.",
               "Bajé 75 % el costo de RPC (de US$ 80 a US$ 20 por día, ~US$ 22.000 al año) tras diagnosticar un monitor de depósitos mal calibrado.",
             ],
           },

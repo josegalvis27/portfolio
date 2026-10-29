@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "José Galvis — CTO · Fintech, Web3 & Flutter",
+  title: "José Galvis — CTO · Fintech y apps móviles",
   description:
     "CTO de Coco Wallet y Coco Mercado, co-founder de Staff On. Fintech, Web3 y mobile (Flutter) en Latinoamérica.",
   openGraph: {
